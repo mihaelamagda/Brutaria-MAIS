@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Noto+Serif+Toto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0 ;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 17px;
+}
+
+main {
+    min-height:  100vh; ;
+}
+header {
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+}
+
+navbar{
+    margin-left: 35px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+navbar a {
+    color:white ;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+navbar a:hover{
+    color: rgb(230, 157, 48);
+    text-decoration:underline 2 px;
+}
+
+footer {
+    min-height: 80px;
+    background:#000000 ;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+
+p {
+    line-height: 150%;
+    text-indent: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: 'Noto Serif Toto', serif;
+
+}
+
+h1{
+    font-size: 270%;
+}
+
+h2{
+    font-size:  200%; ;
+}
+
+section {
+    padding: 90px 15%;
+
+}
+
+.logo {
+    height: 60px;
+}
+
+
+#index{
+    background: linear-gradient(#000000a4,#00000050), url("../images/fundal.jpg");
+    min-height: 100vh;
+    background-size: cover;
+}
+.index-info {
+    margin-top: 15vh;
+    text-align: left;
+}
+
+.index-info h1 {
+    font-size: 270%;
+    color: rgba(255, 255, 255, 0.849);
+    
+}
+
+.link-index {
+    color: azure;
+    text-decoration: underline papayawhip;
+    font-size: 20px;
+    position: fixed;
+}
+
+.link-index:hover {
+    color: rgb(230, 157, 48);
+}
+
+.centered {
+    text-align: center;
+}

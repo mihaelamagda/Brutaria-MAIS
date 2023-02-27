@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Noto+Serif+Toto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0 ;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 17px;
+}
+
+main {
+    min-height:  100vh; ;
+}
+header {
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+}
+
+navbar{
+    margin-left: 35px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+navbar a {
+    color:white ;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 25px;
+}
+
+navbar a:hover{
+    color: rgb(230, 157, 48);
+    text-decoration:underline 2 px;
+}
+
+footer {
+    min-height: 80px;
+    background:#000000 ;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+
+p {
+    line-height: 150%;
+    text-indent: 30px;
+}
+
+li {
+    margin-top: 10px;
+    padding-left: 2px;
+    list-style-image: linear-gradient(rgb(80, 9, 9));
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: 'Noto Serif Toto', serif;
+
+}
+
+h1{
+    font-size: 270%;
+}
+
+h2{
+    font-size:  200%; ;
+}
+
+section {
+    padding: 90px 15%;
+
+}
+
+.logo {
+    height: 60px;
+}
+
+
+#index{
+    background: linear-gradient(#000000a4,#00000050), url("../images/fundal.jpg");
+    min-height: 100vh;
+    background-size: cover;
+}
+.index-info {
+    margin-top: 10px;
+    text-align: left;
+    margin-right: -70px;
+}
+
+.index-info h1 {
+    font-size: 290%;
+    color: rgba(255, 255, 255, 0.849);
+    
+}
+
+.link-index {
+    color: azure;
+    text-decoration: underline papayawhip;
+    font-size: 20px;
+    position:fixed ;
+}
+
+.link-index:hover {
+    color: rgb(230, 157, 48);
+}
+
+.centered {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.loc {
+   overflow: auto; 
+   border-bottom: 3px rgb(230, 157, 48) dashed;
+}
+
+.loc img {
+    height: 33vh;
+    width: 33vh;
+    object-fit: cover;
+    
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+ .harta {
+    width: 100%;
+    height: 60vh;
+    border: 2px solid beige;
+    border-radius: 5px;
+ }
+
+ .row {
+    overflow: auto;
+ }
+
+
+.col-50 {
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+}
+
+
+
+.loc2 img {
+    height: 25vh;
+    width: 25vh;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+   
+}
+
+#despre {
+    background:linear-gradient(#000000e1,#000000a4), url(../images/despre1.jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+
+h1,h2,h3 {
+    color: rgb(255, 255, 255);
+}
+ul {
+    color: #ffffff;
+}
+#exploreaza {
+    background-color: #000000;
+}
+
+P {
+    color: rgb(255, 255, 255);
+}
+
+#contacte {
+    background-color: #000000;
+}
+b {
+    color: rgb(255, 255, 255);
+}
+
+.contacte, .cform {
+    border: #000000;
+    border-radius: 5px;
+    background-color: #413d3da9;
+    padding: 5px 5%;
+    height:325px ;
+}
+
+.cform input, .cform textarea {
+    width:100%;
+    font-size:15px ;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+}
+
+#hamburger{
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* media trebuie sa fie la sfirsitulfisierului*/
+
+@media (max-width:800px) {
+
+body {
+    font-size: 16px;
+}
+    section {
+padding: 90px 10px;}
+
+.index-info h1 {
+    font-size: 250%;
+}
+[class^="col-"] {
+    width: 100% !important;
+}
+
+    navbar a {
+        display: none;
+    }
+
+    navbar.mobile a{
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+    navbar {
+        display: block;
+    }
+  
+    #hamburger{ display: block;
+}
+}
